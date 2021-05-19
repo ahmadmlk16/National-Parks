@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Audio" representedClassName=".Audio" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="voiceRecording" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <relationship name="park" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Park" inverseName="audio" inverseEntity="Park"/>
+    </entity>
+    <entity name="Park" representedClassName=".Park" syncable="YES">
+        <attribute name="dateVisited" optional="YES" attributeType="String"/>
+        <attribute name="fullName" optional="YES" attributeType="String"/>
+        <attribute name="rating" optional="YES" attributeType="String"/>
+        <attribute name="speechToTextNotes" optional="YES" attributeType="String"/>
+        <attribute name="states" optional="YES" attributeType="String"/>
+        <relationship name="audio" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Audio" inverseName="park" inverseEntity="Audio"/>
+        <relationship name="photo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Photo" inverseName="park" inverseEntity="Photo"/>
+    </entity>
+    <entity name="Photo" representedClassName=".Photo" syncable="YES">
+        <attribute name="dateTime" optional="YES" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="String"/>
+        <attribute name="nationalParkPhoto" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <relationship name="park" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Park" inverseName="photo" inverseEntity="Park"/>
+    </entity>
+    <elements>
+        <element name="Audio" positionX="1269.7890625" positionY="22891.5390625" width="128" height="88"/>
+        <element name="Park" positionX="908.29296875" positionY="22791.31640625" width="128" height="148"/>
+        <element name="Photo" positionX="1184.28125" positionY="23042.58984375" width="128" height="118"/>
+    </elements>
+</model>

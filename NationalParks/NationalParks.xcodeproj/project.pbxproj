@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C1D7B882440256B00E349EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D7B872440256B00E349EF /* AppDelegate.swift */; };
+		3C1D7B8A2440256B00E349EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D7B892440256B00E349EF /* SceneDelegate.swift */; };
+		3C1D7B8D2440256B00E349EF /* NationalParks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D7B8B2440256B00E349EF /* NationalParks.xcdatamodeld */; };
+		3C1D7B8F2440256B00E349EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D7B8E2440256B00E349EF /* ContentView.swift */; };
+		3C1D7B942440256D00E349EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C1D7B932440256D00E349EF /* Preview Assets.xcassets */; };
+		3C1D7B972440256D00E349EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C1D7B952440256D00E349EF /* LaunchScreen.storyboard */; };
+		3C1D7B9F244025BA00E349EF /* InitialDatabaseContent.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C1D7B9E244025BA00E349EF /* InitialDatabaseContent.json */; };
+		3C1D7BA12440283F00E349EF /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D7BA02440283F00E349EF /* Home.swift */; };
+		3C1D7BA32440286E00E349EF /* ParksVisited.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D7BA22440286E00E349EF /* ParksVisited.swift */; };
+		3C1D7BA52440289B00E349EF /* SearchName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D7BA42440289B00E349EF /* SearchName.swift */; };
+		3C1D7BA7244028A200E349EF /* SearchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D7BA6244028A200E349EF /* SearchState.swift */; };
+		3C1D7BA9244029A300E349EF /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D7BA8244029A300E349EF /* WebView.swift */; };
+		3C1D7BAB24402B6A00E349EF /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D7BAA24402B6A00E349EF /* UserData.swift */; };
+		3C1D7BB42440349A00E349EF /* SearchByNameAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D7BB32440349A00E349EF /* SearchByNameAPI.swift */; };
+		3C1D7BB6244036CC00E349EF /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D7BB5244036CC00E349EF /* Park.swift */; };
+		3C1D7BB924403B6F00E349EF /* JPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D7BB824403B6F00E349EF /* JPark.swift */; };
+		3C1D7BBD24403BAA00E349EF /* LoadInitialContenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D7BBC24403BAA00E349EF /* LoadInitialContenData.swift */; };
+		3C1D7BBF24403CD600E349EF /* ParkDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D7BBE24403CD600E349EF /* ParkDetails.swift */; };
+		3C1D7BC124403D0B00E349EF /* ParkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D7BC024403D0B00E349EF /* ParkItem.swift */; };
+		3C1D7BC4244044EE00E349EF /* National Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D7BC3244044EE00E349EF /* National Park.swift */; };
+		3C3984F6244571760080D775 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3984F5244571760080D775 /* Photo.swift */; };
+		3C3984F8244571840080D775 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3984F7244571840080D775 /* Audio.swift */; };
+		3C3984FA2445761A0080D775 /* Image From Binary Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3984F92445761A0080D775 /* Image From Binary Data.swift */; };
+		3C3984FD24457F1D0080D775 /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3984FC24457F1D0080D775 /* PhotoCaptureView.swift */; };
+		3C3984FF24457F280080D775 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3984FE24457F280080D775 /* ImagePicker.swift */; };
+		3C3985012445869A0080D775 /* CurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3985002445869A0080D775 /* CurrentLocation.swift */; };
+		3C87F64A2446F4E00070BAB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C1D7B902440256D00E349EF /* Assets.xcassets */; };
+		3C95DEE4244062E7008F1977 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C95DEE3244062E7008F1977 /* MapView.swift */; };
+		3C95DEE624406C41008F1977 /* VisitedParkDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C95DEE524406C41008F1977 /* VisitedParkDetails.swift */; };
+		3CB08F852445A82500B3AC5F /* Shenandoah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F782445A82500B3AC5F /* Shenandoah.jpg */; };
+		3CB08F862445A82500B3AC5F /* Zion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F792445A82500B3AC5F /* Zion.jpg */; };
+		3CB08F872445A82500B3AC5F /* Yellowstone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F7A2445A82500B3AC5F /* Yellowstone.jpg */; };
+		3CB08F882445A82500B3AC5F /* RockyMountain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F7B2445A82500B3AC5F /* RockyMountain.jpg */; };
+		3CB08F892445A82500B3AC5F /* GrandCanyon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F7C2445A82500B3AC5F /* GrandCanyon.jpg */; };
+		3CB08F8A2445A82500B3AC5F /* GreatSmokyMountains.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F7D2445A82500B3AC5F /* GreatSmokyMountains.jpg */; };
+		3CB08F8B2445A82500B3AC5F /* BryceCanyon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F7E2445A82500B3AC5F /* BryceCanyon.jpg */; };
+		3CB08F8C2445A82500B3AC5F /* DefaultParkPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F7F2445A82500B3AC5F /* DefaultParkPhoto.jpg */; };
+		3CB08F8D2445A82500B3AC5F /* Acadia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F802445A82500B3AC5F /* Acadia.jpg */; };
+		3CB08F8E2445A82500B3AC5F /* Glacier.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F812445A82500B3AC5F /* Glacier.jpg */; };
+		3CB08F8F2445A82500B3AC5F /* Yosemite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F822445A82500B3AC5F /* Yosemite.jpg */; };
+		3CB08F902445A82500B3AC5F /* GrandTeton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F832445A82500B3AC5F /* GrandTeton.jpg */; };
+		3CB08F912445A82500B3AC5F /* Olympic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F842445A82500B3AC5F /* Olympic.jpg */; };
+		3CB08F9F2445AB3600B3AC5F /* RockyMountain.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F932445AB3600B3AC5F /* RockyMountain.m4a */; };
+		3CB08FA02445AB3600B3AC5F /* GrandCanyon.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F942445AB3600B3AC5F /* GrandCanyon.m4a */; };
+		3CB08FA12445AB3600B3AC5F /* Yellowstone.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F952445AB3600B3AC5F /* Yellowstone.m4a */; };
+		3CB08FA22445AB3600B3AC5F /* Zion.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F962445AB3600B3AC5F /* Zion.m4a */; };
+		3CB08FA32445AB3600B3AC5F /* Shenandoah.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F972445AB3600B3AC5F /* Shenandoah.m4a */; };
+		3CB08FA42445AB3600B3AC5F /* BryceCanyon.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F982445AB3600B3AC5F /* BryceCanyon.m4a */; };
+		3CB08FA52445AB3600B3AC5F /* GreatSmokyMountains.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F992445AB3600B3AC5F /* GreatSmokyMountains.m4a */; };
+		3CB08FA62445AB3600B3AC5F /* Acadia.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F9A2445AB3600B3AC5F /* Acadia.m4a */; };
+		3CB08FA72445AB3600B3AC5F /* Olympic.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F9B2445AB3600B3AC5F /* Olympic.m4a */; };
+		3CB08FA82445AB3600B3AC5F /* GrandTeton.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F9C2445AB3600B3AC5F /* GrandTeton.m4a */; };
+		3CB08FA92445AB3600B3AC5F /* Yosemite.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F9D2445AB3600B3AC5F /* Yosemite.m4a */; };
+		3CB08FAA2445AB3600B3AC5F /* Glacier.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3CB08F9E2445AB3600B3AC5F /* Glacier.m4a */; };
+		3CB08FAD2445AC6700B3AC5F /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB08FAC2445AC6700B3AC5F /* AudioPlayer.swift */; };
+		3CB08FAF2445AC8300B3AC5F /* SpeechtoTextData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB08FAE2445AC8300B3AC5F /* SpeechtoTextData.swift */; };
+		3CF882A22442DE4F00E1FF56 /* StateParksList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF882A12442DE4F00E1FF56 /* StateParksList.swift */; };
+		3CF882A42442DEF600E1FF56 /* SearchByState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF882A32442DEF600E1FF56 /* SearchByState.swift */; };
+		3CF882A62442EE5E00E1FF56 /* StateParkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF882A52442EE5E00E1FF56 /* StateParkItem.swift */; };
+		3CF882AA2442F13A00E1FF56 /* Image From Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF882A92442F13A00E1FF56 /* Image From Url.swift */; };
+		3CF882AC24430BB500E1FF56 /* ParkSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF882AB24430BB500E1FF56 /* ParkSurvey.swift */; };
+		3CF882AE24430C4600E1FF56 /* Date Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF882AD24430C4600E1FF56 /* Date Converter.swift */; };
+		3CF882B22443118100E1FF56 /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF882B12443118100E1FF56 /* Players.swift */; };
+		3CF882B624431B9F00E1FF56 /* VoiceMemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF882B524431B9F00E1FF56 /* VoiceMemoData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C1D7B842440256B00E349EF /* NationalParks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NationalParks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C1D7B872440256B00E349EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C1D7B892440256B00E349EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3C1D7B8C2440256B00E349EF /* NationalParks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NationalParks.xcdatamodel; sourceTree = "<group>"; };
+		3C1D7B8E2440256B00E349EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3C1D7B902440256D00E349EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C1D7B932440256D00E349EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3C1D7B962440256D00E349EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C1D7B982440256D00E349EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C1D7B9E244025BA00E349EF /* InitialDatabaseContent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InitialDatabaseContent.json; sourceTree = "<group>"; };
+		3C1D7BA02440283F00E349EF /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		3C1D7BA22440286E00E349EF /* ParksVisited.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksVisited.swift; sourceTree = "<group>"; };
+		3C1D7BA42440289B00E349EF /* SearchName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchName.swift; sourceTree = "<group>"; };
+		3C1D7BA6244028A200E349EF /* SearchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchState.swift; sourceTree = "<group>"; };
+		3C1D7BA8244029A300E349EF /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		3C1D7BAA24402B6A00E349EF /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		3C1D7BB32440349A00E349EF /* SearchByNameAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByNameAPI.swift; sourceTree = "<group>"; };
+		3C1D7BB5244036CC00E349EF /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
+		3C1D7BB824403B6F00E349EF /* JPark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPark.swift; sourceTree = "<group>"; };
+		3C1D7BBC24403BAA00E349EF /* LoadInitialContenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadInitialContenData.swift; sourceTree = "<group>"; };
+		3C1D7BBE24403CD600E349EF /* ParkDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetails.swift; sourceTree = "<group>"; };
+		3C1D7BC024403D0B00E349EF /* ParkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkItem.swift; sourceTree = "<group>"; };
+		3C1D7BC3244044EE00E349EF /* National Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "National Park.swift"; sourceTree = "<group>"; };
+		3C3984F5244571760080D775 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		3C3984F7244571840080D775 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		3C3984F92445761A0080D775 /* Image From Binary Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image From Binary Data.swift"; sourceTree = "<group>"; };
+		3C3984FC24457F1D0080D775 /* PhotoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
+		3C3984FE24457F280080D775 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		3C3985002445869A0080D775 /* CurrentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocation.swift; sourceTree = "<group>"; };
+		3C95DEE3244062E7008F1977 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		3C95DEE524406C41008F1977 /* VisitedParkDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedParkDetails.swift; sourceTree = "<group>"; };
+		3CB08F782445A82500B3AC5F /* Shenandoah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Shenandoah.jpg; sourceTree = "<group>"; };
+		3CB08F792445A82500B3AC5F /* Zion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Zion.jpg; sourceTree = "<group>"; };
+		3CB08F7A2445A82500B3AC5F /* Yellowstone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yellowstone.jpg; sourceTree = "<group>"; };
+		3CB08F7B2445A82500B3AC5F /* RockyMountain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RockyMountain.jpg; sourceTree = "<group>"; };
+		3CB08F7C2445A82500B3AC5F /* GrandCanyon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GrandCanyon.jpg; sourceTree = "<group>"; };
+		3CB08F7D2445A82500B3AC5F /* GreatSmokyMountains.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GreatSmokyMountains.jpg; sourceTree = "<group>"; };
+		3CB08F7E2445A82500B3AC5F /* BryceCanyon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BryceCanyon.jpg; sourceTree = "<group>"; };
+		3CB08F7F2445A82500B3AC5F /* DefaultParkPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DefaultParkPhoto.jpg; sourceTree = "<group>"; };
+		3CB08F802445A82500B3AC5F /* Acadia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Acadia.jpg; sourceTree = "<group>"; };
+		3CB08F812445A82500B3AC5F /* Glacier.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Glacier.jpg; sourceTree = "<group>"; };
+		3CB08F822445A82500B3AC5F /* Yosemite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yosemite.jpg; sourceTree = "<group>"; };
+		3CB08F832445A82500B3AC5F /* GrandTeton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GrandTeton.jpg; sourceTree = "<group>"; };
+		3CB08F842445A82500B3AC5F /* Olympic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Olympic.jpg; sourceTree = "<group>"; };
+		3CB08F932445AB3600B3AC5F /* RockyMountain.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = RockyMountain.m4a; sourceTree = "<group>"; };
+		3CB08F942445AB3600B3AC5F /* GrandCanyon.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = GrandCanyon.m4a; sourceTree = "<group>"; };
+		3CB08F952445AB3600B3AC5F /* Yellowstone.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yellowstone.m4a; sourceTree = "<group>"; };
+		3CB08F962445AB3600B3AC5F /* Zion.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zion.m4a; sourceTree = "<group>"; };
+		3CB08F972445AB3600B3AC5F /* Shenandoah.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shenandoah.m4a; sourceTree = "<group>"; };
+		3CB08F982445AB3600B3AC5F /* BryceCanyon.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = BryceCanyon.m4a; sourceTree = "<group>"; };
+		3CB08F992445AB3600B3AC5F /* GreatSmokyMountains.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = GreatSmokyMountains.m4a; sourceTree = "<group>"; };
+		3CB08F9A2445AB3600B3AC5F /* Acadia.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Acadia.m4a; sourceTree = "<group>"; };
+		3CB08F9B2445AB3600B3AC5F /* Olympic.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Olympic.m4a; sourceTree = "<group>"; };
+		3CB08F9C2445AB3600B3AC5F /* GrandTeton.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = GrandTeton.m4a; sourceTree = "<group>"; };
+		3CB08F9D2445AB3600B3AC5F /* Yosemite.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yosemite.m4a; sourceTree = "<group>"; };
+		3CB08F9E2445AB3600B3AC5F /* Glacier.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Glacier.m4a; sourceTree = "<group>"; };
+		3CB08FAC2445AC6700B3AC5F /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		3CB08FAE2445AC8300B3AC5F /* SpeechtoTextData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechtoTextData.swift; sourceTree = "<group>"; };
+		3CF882A12442DE4F00E1FF56 /* StateParksList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateParksList.swift; sourceTree = "<group>"; };
+		3CF882A32442DEF600E1FF56 /* SearchByState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByState.swift; sourceTree = "<group>"; };
+		3CF882A52442EE5E00E1FF56 /* StateParkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateParkItem.swift; sourceTree = "<group>"; };
+		3CF882A92442F13A00E1FF56 /* Image From Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image From Url.swift"; sourceTree = "<group>"; };
+		3CF882AB24430BB500E1FF56 /* ParkSurvey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkSurvey.swift; sourceTree = "<group>"; };
+		3CF882AD24430C4600E1FF56 /* Date Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date Converter.swift"; sourceTree = "<group>"; };
+		3CF882B12443118100E1FF56 /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
+		3CF882B524431B9F00E1FF56 /* VoiceMemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMemoData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C1D7B812440256B00E349EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C1D7B7B2440256B00E349EF = {
+			isa = PBXGroup;
+			children = (
+				3C1D7B862440256B00E349EF /* NationalParks */,
+				3C1D7B852440256B00E349EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C1D7B852440256B00E349EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C1D7B842440256B00E349EF /* NationalParks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C1D7B862440256B00E349EF /* NationalParks */ = {
+			isa = PBXGroup;
+			children = (
+				3C3984FB24457F020080D775 /* Take or Pick Photo */,
+				3C1D7BC2244044CA00E349EF /* Search Data Model */,
+				3C1D7BB724403B4900E349EF /* Populate Database */,
+				3C1D7BAE244033AD00E349EF /* Delegates */,
+				3C1D7BAD244033A300E349EF /* Data Model */,
+				3C1D7BAF244033CE00E349EF /* Helper Views */,
+				3C1D7B8E2440256B00E349EF /* ContentView.swift */,
+				3CB08FAB2445AC2400B3AC5F /* Voice Model */,
+				3C1D7BAC2440338F00E349EF /* Home */,
+				3C1D7BB0244033FC00E349EF /* Parks Visited */,
+				3C1D7BB12440340E00E349EF /* Search By Name */,
+				3C1D7BB22440342200E349EF /* Search By State */,
+				3CB08F922445AB3600B3AC5F /* AudioFiles */,
+				3CB08F772445A82500B3AC5F /* NationalParkPhotos */,
+				3C1D7B902440256D00E349EF /* Assets.xcassets */,
+				3C1D7B952440256D00E349EF /* LaunchScreen.storyboard */,
+				3C1D7B982440256D00E349EF /* Info.plist */,
+				3C1D7B922440256D00E349EF /* Preview Content */,
+			);
+			path = NationalParks;
+			sourceTree = "<group>";
+		};
+		3C1D7B922440256D00E349EF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3C1D7B932440256D00E349EF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3C1D7BAC2440338F00E349EF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3C1D7BA02440283F00E349EF /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3C1D7BAD244033A300E349EF /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C1D7BAA24402B6A00E349EF /* UserData.swift */,
+				3C1D7B8B2440256B00E349EF /* NationalParks.xcdatamodeld */,
+				3C1D7BB5244036CC00E349EF /* Park.swift */,
+				3C3984F5244571760080D775 /* Photo.swift */,
+				3C3984F7244571840080D775 /* Audio.swift */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		3C1D7BAE244033AD00E349EF /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				3C1D7B892440256B00E349EF /* SceneDelegate.swift */,
+				3C1D7B872440256B00E349EF /* AppDelegate.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		3C1D7BAF244033CE00E349EF /* Helper Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C1D7BA8244029A300E349EF /* WebView.swift */,
+				3C1D7BBE24403CD600E349EF /* ParkDetails.swift */,
+				3C95DEE3244062E7008F1977 /* MapView.swift */,
+				3CF882A92442F13A00E1FF56 /* Image From Url.swift */,
+				3CF882AD24430C4600E1FF56 /* Date Converter.swift */,
+				3CF882B12443118100E1FF56 /* Players.swift */,
+				3C3984F92445761A0080D775 /* Image From Binary Data.swift */,
+				3C3985002445869A0080D775 /* CurrentLocation.swift */,
+			);
+			name = "Helper Views";
+			sourceTree = "<group>";
+		};
+		3C1D7BB0244033FC00E349EF /* Parks Visited */ = {
+			isa = PBXGroup;
+			children = (
+				3C1D7BC024403D0B00E349EF /* ParkItem.swift */,
+				3C1D7BA22440286E00E349EF /* ParksVisited.swift */,
+				3C95DEE524406C41008F1977 /* VisitedParkDetails.swift */,
+				3CF882AB24430BB500E1FF56 /* ParkSurvey.swift */,
+			);
+			name = "Parks Visited";
+			sourceTree = "<group>";
+		};
+		3C1D7BB12440340E00E349EF /* Search By Name */ = {
+			isa = PBXGroup;
+			children = (
+				3C1D7BA42440289B00E349EF /* SearchName.swift */,
+			);
+			name = "Search By Name";
+			sourceTree = "<group>";
+		};
+		3C1D7BB22440342200E349EF /* Search By State */ = {
+			isa = PBXGroup;
+			children = (
+				3C1D7BA6244028A200E349EF /* SearchState.swift */,
+				3CF882A12442DE4F00E1FF56 /* StateParksList.swift */,
+				3CF882A52442EE5E00E1FF56 /* StateParkItem.swift */,
+			);
+			name = "Search By State";
+			sourceTree = "<group>";
+		};
+		3C1D7BB724403B4900E349EF /* Populate Database */ = {
+			isa = PBXGroup;
+			children = (
+				3C1D7B9E244025BA00E349EF /* InitialDatabaseContent.json */,
+				3C1D7BB824403B6F00E349EF /* JPark.swift */,
+				3C1D7BBC24403BAA00E349EF /* LoadInitialContenData.swift */,
+			);
+			name = "Populate Database";
+			sourceTree = "<group>";
+		};
+		3C1D7BC2244044CA00E349EF /* Search Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C1D7BC3244044EE00E349EF /* National Park.swift */,
+				3C1D7BB32440349A00E349EF /* SearchByNameAPI.swift */,
+				3CF882A32442DEF600E1FF56 /* SearchByState.swift */,
+			);
+			name = "Search Data Model";
+			sourceTree = "<group>";
+		};
+		3C3984FB24457F020080D775 /* Take or Pick Photo */ = {
+			isa = PBXGroup;
+			children = (
+				3C3984FC24457F1D0080D775 /* PhotoCaptureView.swift */,
+				3C3984FE24457F280080D775 /* ImagePicker.swift */,
+			);
+			name = "Take or Pick Photo";
+			sourceTree = "<group>";
+		};
+		3CB08F772445A82500B3AC5F /* NationalParkPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				3CB08F782445A82500B3AC5F /* Shenandoah.jpg */,
+				3CB08F792445A82500B3AC5F /* Zion.jpg */,
+				3CB08F7A2445A82500B3AC5F /* Yellowstone.jpg */,
+				3CB08F7B2445A82500B3AC5F /* RockyMountain.jpg */,
+				3CB08F7C2445A82500B3AC5F /* GrandCanyon.jpg */,
+				3CB08F7D2445A82500B3AC5F /* GreatSmokyMountains.jpg */,
+				3CB08F7E2445A82500B3AC5F /* BryceCanyon.jpg */,
+				3CB08F7F2445A82500B3AC5F /* DefaultParkPhoto.jpg */,
+				3CB08F802445A82500B3AC5F /* Acadia.jpg */,
+				3CB08F812445A82500B3AC5F /* Glacier.jpg */,
+				3CB08F822445A82500B3AC5F /* Yosemite.jpg */,
+				3CB08F832445A82500B3AC5F /* GrandTeton.jpg */,
+				3CB08F842445A82500B3AC5F /* Olympic.jpg */,
+			);
+			path = NationalParkPhotos;
+			sourceTree = "<group>";
+		};
+		3CB08F922445AB3600B3AC5F /* AudioFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3CB08F932445AB3600B3AC5F /* RockyMountain.m4a */,
+				3CB08F942445AB3600B3AC5F /* GrandCanyon.m4a */,
+				3CB08F952445AB3600B3AC5F /* Yellowstone.m4a */,
+				3CB08F962445AB3600B3AC5F /* Zion.m4a */,
+				3CB08F972445AB3600B3AC5F /* Shenandoah.m4a */,
+				3CB08F982445AB3600B3AC5F /* BryceCanyon.m4a */,
+				3CB08F992445AB3600B3AC5F /* GreatSmokyMountains.m4a */,
+				3CB08F9A2445AB3600B3AC5F /* Acadia.m4a */,
+				3CB08F9B2445AB3600B3AC5F /* Olympic.m4a */,
+				3CB08F9C2445AB3600B3AC5F /* GrandTeton.m4a */,
+				3CB08F9D2445AB3600B3AC5F /* Yosemite.m4a */,
+				3CB08F9E2445AB3600B3AC5F /* Glacier.m4a */,
+			);
+			path = AudioFiles;
+			sourceTree = "<group>";
+		};
+		3CB08FAB2445AC2400B3AC5F /* Voice Model */ = {
+			isa = PBXGroup;
+			children = (
+				3CF882B524431B9F00E1FF56 /* VoiceMemoData.swift */,
+				3CB08FAC2445AC6700B3AC5F /* AudioPlayer.swift */,
+				3CB08FAE2445AC8300B3AC5F /* SpeechtoTextData.swift */,
+			);
+			name = "Voice Model";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C1D7B832440256B00E349EF /* NationalParks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C1D7B9B2440256D00E349EF /* Build configuration list for PBXNativeTarget "NationalParks" */;
+			buildPhases = (
+				3C1D7B802440256B00E349EF /* Sources */,
+				3C1D7B812440256B00E349EF /* Frameworks */,
+				3C1D7B822440256B00E349EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NationalParks;
+			productName = NationalParks;
+			productReference = 3C1D7B842440256B00E349EF /* NationalParks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C1D7B7C2440256B00E349EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = AhmadMalik;
+				TargetAttributes = {
+					3C1D7B832440256B00E349EF = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 3C1D7B7F2440256B00E349EF /* Build configuration list for PBXProject "NationalParks" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C1D7B7B2440256B00E349EF;
+			productRefGroup = 3C1D7B852440256B00E349EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C1D7B832440256B00E349EF /* NationalParks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C1D7B822440256B00E349EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB08F8F2445A82500B3AC5F /* Yosemite.jpg in Resources */,
+				3CB08FA02445AB3600B3AC5F /* GrandCanyon.m4a in Resources */,
+				3CB08F872445A82500B3AC5F /* Yellowstone.jpg in Resources */,
+				3CB08FA82445AB3600B3AC5F /* GrandTeton.m4a in Resources */,
+				3CB08FA52445AB3600B3AC5F /* GreatSmokyMountains.m4a in Resources */,
+				3C1D7B972440256D00E349EF /* LaunchScreen.storyboard in Resources */,
+				3CB08F902445A82500B3AC5F /* GrandTeton.jpg in Resources */,
+				3CB08FA72445AB3600B3AC5F /* Olympic.m4a in Resources */,
+				3CB08FA22445AB3600B3AC5F /* Zion.m4a in Resources */,
+				3CB08F8A2445A82500B3AC5F /* GreatSmokyMountains.jpg in Resources */,
+				3CB08F8E2445A82500B3AC5F /* Glacier.jpg in Resources */,
+				3CB08F9F2445AB3600B3AC5F /* RockyMountain.m4a in Resources */,
+				3CB08FAA2445AB3600B3AC5F /* Glacier.m4a in Resources */,
+				3CB08FA12445AB3600B3AC5F /* Yellowstone.m4a in Resources */,
+				3CB08F8B2445A82500B3AC5F /* BryceCanyon.jpg in Resources */,
+				3CB08F8C2445A82500B3AC5F /* DefaultParkPhoto.jpg in Resources */,
+				3C1D7B9F244025BA00E349EF /* InitialDatabaseContent.json in Resources */,
+				3CB08F912445A82500B3AC5F /* Olympic.jpg in Resources */,
+				3CB08F882445A82500B3AC5F /* RockyMountain.jpg in Resources */,
+				3CB08FA62445AB3600B3AC5F /* Acadia.m4a in Resources */,
+				3CB08F852445A82500B3AC5F /* Shenandoah.jpg in Resources */,
+				3CB08FA42445AB3600B3AC5F /* BryceCanyon.m4a in Resources */,
+				3C1D7B942440256D00E349EF /* Preview Assets.xcassets in Resources */,
+				3CB08FA92445AB3600B3AC5F /* Yosemite.m4a in Resources */,
+				3CB08F8D2445A82500B3AC5F /* Acadia.jpg in Resources */,
+				3CB08F862445A82500B3AC5F /* Zion.jpg in Resources */,
+				3C87F64A2446F4E00070BAB1 /* Assets.xcassets in Resources */,
+				3CB08F892445A82500B3AC5F /* GrandCanyon.jpg in Resources */,
+				3CB08FA32445AB3600B3AC5F /* Shenandoah.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C1D7B802440256B00E349EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C1D7BB42440349A00E349EF /* SearchByNameAPI.swift in Sources */,
+				3C95DEE624406C41008F1977 /* VisitedParkDetails.swift in Sources */,
+				3C1D7B882440256B00E349EF /* AppDelegate.swift in Sources */,
+				3C1D7BA52440289B00E349EF /* SearchName.swift in Sources */,
+				3CF882AA2442F13A00E1FF56 /* Image From Url.swift in Sources */,
+				3C1D7B8A2440256B00E349EF /* SceneDelegate.swift in Sources */,
+				3CF882A42442DEF600E1FF56 /* SearchByState.swift in Sources */,
+				3C1D7BA7244028A200E349EF /* SearchState.swift in Sources */,
+				3C1D7BC4244044EE00E349EF /* National Park.swift in Sources */,
+				3CF882AE24430C4600E1FF56 /* Date Converter.swift in Sources */,
+				3C3984FD24457F1D0080D775 /* PhotoCaptureView.swift in Sources */,
+				3C1D7BA12440283F00E349EF /* Home.swift in Sources */,
+				3C95DEE4244062E7008F1977 /* MapView.swift in Sources */,
+				3C1D7BC124403D0B00E349EF /* ParkItem.swift in Sources */,
+				3C1D7B8F2440256B00E349EF /* ContentView.swift in Sources */,
+				3C1D7BB6244036CC00E349EF /* Park.swift in Sources */,
+				3C3985012445869A0080D775 /* CurrentLocation.swift in Sources */,
+				3C1D7BBF24403CD600E349EF /* ParkDetails.swift in Sources */,
+				3CF882AC24430BB500E1FF56 /* ParkSurvey.swift in Sources */,
+				3C3984FF24457F280080D775 /* ImagePicker.swift in Sources */,
+				3C3984FA2445761A0080D775 /* Image From Binary Data.swift in Sources */,
+				3CF882B22443118100E1FF56 /* Players.swift in Sources */,
+				3CF882A22442DE4F00E1FF56 /* StateParksList.swift in Sources */,
+				3C1D7BB924403B6F00E349EF /* JPark.swift in Sources */,
+				3CF882A62442EE5E00E1FF56 /* StateParkItem.swift in Sources */,
+				3CF882B624431B9F00E1FF56 /* VoiceMemoData.swift in Sources */,
+				3CB08FAD2445AC6700B3AC5F /* AudioPlayer.swift in Sources */,
+				3C1D7BA9244029A300E349EF /* WebView.swift in Sources */,
+				3C3984F8244571840080D775 /* Audio.swift in Sources */,
+				3C1D7BA32440286E00E349EF /* ParksVisited.swift in Sources */,
+				3CB08FAF2445AC8300B3AC5F /* SpeechtoTextData.swift in Sources */,
+				3C1D7BBD24403BAA00E349EF /* LoadInitialContenData.swift in Sources */,
+				3C1D7BAB24402B6A00E349EF /* UserData.swift in Sources */,
+				3C1D7B8D2440256B00E349EF /* NationalParks.xcdatamodeld in Sources */,
+				3C3984F6244571760080D775 /* Photo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3C1D7B952440256D00E349EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C1D7B962440256D00E349EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C1D7B992440256D00E349EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C1D7B9A2440256D00E349EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C1D7B9C2440256D00E349EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NationalParks/Preview Content\"";
+				DEVELOPMENT_TEAM = F32QZ95WZ7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = NationalParks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AhmadMalik.NationalParks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C1D7B9D2440256D00E349EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NationalParks/Preview Content\"";
+				DEVELOPMENT_TEAM = F32QZ95WZ7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = NationalParks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AhmadMalik.NationalParks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C1D7B7F2440256B00E349EF /* Build configuration list for PBXProject "NationalParks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C1D7B992440256D00E349EF /* Debug */,
+				3C1D7B9A2440256D00E349EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C1D7B9B2440256D00E349EF /* Build configuration list for PBXNativeTarget "NationalParks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C1D7B9C2440256D00E349EF /* Debug */,
+				3C1D7B9D2440256D00E349EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3C1D7B8B2440256B00E349EF /* NationalParks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3C1D7B8C2440256B00E349EF /* NationalParks.xcdatamodel */,
+			);
+			currentVersion = 3C1D7B8C2440256B00E349EF /* NationalParks.xcdatamodel */;
+			path = NationalParks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3C1D7B7C2440256B00E349EF /* Project object */;
+}
